@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Body with deep animated gradient glow */
+body{
+    background: radial-gradient(circle at 50% 50%, #171526 0%, #090812 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container with glassmorphism */
+.container{
+    width: 1020px;
+    margin: auto;
+    background: rgba(22, 19, 39, 0.85);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 
+                0 0 40px rgba(168, 85, 247, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+/* Header with vibrant futuristic gradient */
+.header{
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #c084fc 100%);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header h1{
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #f3e8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p{
+    font-size: 16px;
+    color: #e9d5ff;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Main Section */
+.main{
+    display: flex;
+    background: transparent;
+}
+
+/* Sidebar */
+.sidebar{
+    width: 240px;
+    background: rgba(15, 12, 28, 0.5);
+    padding: 30px 20px;
+    border-right: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+.sidebar h2{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #c084fc;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li{
+    background: rgba(255, 255, 255, 0.03);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: 14px;
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.sidebar ul li:hover{
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2) 0%, rgba(124, 58, 237, 0.2) 100%);
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.15);
+}
+
+.sidebar ul li:hover a{
+    color: #f3f4f6;
+}
+
+/* Content Panel */
+.content{
+    flex: 1;
+    padding: 35px;
+    background: transparent;
+    color: #e5e7eb;
+}
+
+.content h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #7c3aed;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+/* Align labels (bold text in paragraphs) beautifully */
+.content p b {
+    display: inline-block;
+    width: 120px;
+    color: #c084fc;
+    font-weight: 600;
+}
+
+/* Links within Content area */
+.content a{
+    color: #c084fc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px dashed rgba(192, 132, 252, 0.4);
+    padding-bottom: 2px;
+}
+
+.content a:hover{
+    color: #e9d5ff;
+    border-bottom-color: #e9d5ff;
+}
+
+/* List styling under Content (e.g. Skills list) */
+.content ul{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.content ul li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #d1d5db;
+}
+
+.content ul li::before{
+    content: "\2726";
+    position: absolute;
+    left: 0;
+    color: #c084fc;
+    font-weight: bold;
+}
+
+/* Projects page specific styling */
+.content h3{
+    color: #c084fc;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Photo panel with elegant background and glowing image */
+.photo{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    background: rgba(10, 8, 20, 0.3);
+    border-left: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.photo img{
+    width: 200px;
+    height: 230px;
+    border: 3px solid rgba(168, 85, 247, 0.4);
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
+    transition: all 0.4s ease;
+}
+
+.photo img:hover{
+    transform: scale(1.03) rotate(1deg);
+    border-color: rgba(192, 132, 252, 0.8);
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.4);
+}
+
+/* Table styling for dark theme (e.g. Education details) */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+table th{
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+table td{
+    background: rgba(255, 255, 255, 0.02);
+    color: #d1d5db;
+}
+
+table th,
+table td{
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    padding: 14px;
+    text-align: center;
+}
+
+table tr:nth-child(even) td{
+    background: rgba(255, 255, 255, 0.04);
+}
+
+table tr:hover td{
+    background: rgba(124, 58, 237, 0.12);
+    color: #ffffff;
+    transition: background 0.2s ease;
+}
+
+/* Responsive design */
+@media(max-width: 1000px){
+    body{
+        padding: 15px;
+    }
+    
+    .container{
+        width: 100%;
+        border-radius: 12px;
+    }
+    
+    .main{
+        flex-direction: column;
+    }
+    
+    .sidebar{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+        padding: 20px;
+    }
+    
+    .sidebar h2{
+        margin-bottom: 15px;
+    }
+    
+    .sidebar ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .sidebar ul li{
+        margin-bottom: 0;
+        flex: 1 1 120px;
+    }
+    
+    .content{
+        width: 100%;
+        padding: 25px;
+    }
+    
+    .photo{
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid rgba(168, 85, 247, 0.1);
+        padding: 30px 20px;
+    }
+}
